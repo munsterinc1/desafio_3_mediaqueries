@@ -1,0 +1,152 @@
+body{
+    background-color: darkgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "aside"
+    "section"
+    "footer";
+    gap: 0px;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    background-color: #1976d2;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuboton{
+    display: none;
+}
+
+.menuenlaces{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.namecompany{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.iconmenu{
+    padding-left: 15rem;
+    padding-right: 1rem;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #e0e0e0;
+}
+
+section{
+    grid-area: section;
+    background-color: white;
+}
+
+footer{
+    grid-area: footer;  
+    background-color: #004ba0;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.grid-container-gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 10px;
+    background-color: darkgrey;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu div{
+    padding: 1rem;
+}
+
+.selector{
+    padding-top: 0rem;
+}
+
+.selectorform{
+    padding: 2rem;
+    text-align: center;
+}
+.gallery-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.boton{
+    background-color: darkslategray;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.name{
+    font-size: medium;
+    margin: 2%;
+}
+
+.price{
+    font-size: small;
+    color: grey;
+}
+
+.categories{
+    font-size: medium;
+    margin: 2%;
+}
+
+@media (min-width:576px){
+    body{
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "aside section"
+        "aside section"
+        "footer section";
+    }
+
+    .grid-container-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+        background-color: darkgrey;
+    }
+
+    
+}
